@@ -1,3 +1,9 @@
+## 4.66.3 ( June 9th, 2026 )
+
+### Fixed
+
+- `createIntlNumberFormatter` no longer mis-detects the decimal separator when `minimumFractionDigits` / `maximumFractionDigits` are `0`. `formatToParts(0.1)` can omit a `decimal` segment in that case, so the code fell back to `.` and parsed values wrong in locales where `.` is the *group* separator (for example `es-CO` currency). The decimal character is now resolved using a probe that always emits a fraction. ([#491](https://github.com/teslamotors/informed/issues/491))
+
 ## 4.66.2 ( March 23rd, 2025 )
 
 ### Fixed

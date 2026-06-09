@@ -764,8 +764,31 @@ export const createIntlNumberFormatter = (
     toParts = v => formatToParts(v, locale, opts);
   }
 
-  const decimalChar =
-    toParts(0.1).find(({ type }) => type === 'decimal')?.value ?? '.';
+  // OLD CODE
+  // const decimalChar =
+  //   toParts(0.1).find(({ type }) => type === 'decimal')?.value ?? '.';
+
+  // NEW CODE
+  // When minimumFractionDigits / maximumFractionDigits are 0, formatToParts(0.1)
+  // may omit a "decimal" part entirely, so we would fall back to "." and mis-parse
+  // locales where "." is the *group* separator (e.g. es-CO currency). Probe with a
+  // formatter that always emits a fraction so we resolve the real decimal character.
+  let decimalChar;
+  if (formatToParts) {
+    decimalChar =
+      formatToParts(1.1, locale, opts).find(({ type }) => type === 'decimal')
+        ?.value ?? '.';
+  } else {
+    const decimalProbeFormatter = new Intl.NumberFormat(locale, {
+      ...opts,
+      minimumFractionDigits: 1,
+      maximumFractionDigits: 1
+    });
+    decimalChar =
+      decimalProbeFormatter
+        .formatToParts(1.1)
+        .find(({ type }) => type === 'decimal')?.value ?? '.';
+  }
 
   // console.log('-1 number parts', numberFormatter.formatToParts(-1));
 
