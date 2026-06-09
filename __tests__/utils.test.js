@@ -468,6 +468,34 @@ describe('Utils', () => {
       expect(value).toEqual('3٬000٫25');
     });
 
+    it('createIntlNumberMask should resolve decimal char when fraction digits are 0 (es-CO COP, #491)', () => {
+      const { formatter, parser } = createIntlNumberFormatter('es-CO', {
+        style: 'currency',
+        currency: 'COP',
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0,
+      });
+      const nbsp = '\u00a0';
+      const val = `$${nbsp}5.0000`;
+      expect(informedFormat(val, formatter).value).toBe(`$${nbsp}50.000`);
+      expect(parser(informedFormat(val, formatter).value)).toBe(50000);
+    });
+
+    it('createIntlNumberMask should format and parse fractions for es-CO COP (comma decimal, dot group, #491)', () => {
+      const { formatter, parser } = createIntlNumberFormatter('es-CO', {
+        style: 'currency',
+        currency: 'COP',
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2,
+      });
+      const nbsp = '\u00a0';
+      const formatted = `$${nbsp}50.000,25`;
+      const { value } = informedFormat(50000.25, formatter);
+      expect(value).toBe(formatted);
+      expect(parser(value)).toBe(50000.25);
+      expect(informedFormat(formatted, formatter).value).toBe(formatted);
+    });
+
     // it('createIntlNumberMask should keep both characters for "ar-EG" decimal input with Arabic decimal separator and group seperator when using ","', () => {
 
     //   const { formatter } = createIntlNumberFormatter('ar-EG', {
