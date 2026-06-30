@@ -1,0 +1,179 @@
+# Informed
+
+> A lightweight framework and utility for building powerful forms in React applications.
+
+Documentation for humans: https://teslamotors.github.io/informed
+
+## Documentation (markdown)
+
+### Getting Started
+
+- [Adobe Checkbox](https://teslamotors.github.io/informed/getting-started/adobe-checkbox.md): getting-started/adobe-checkbox
+- [Adobe Checkbox Group](https://teslamotors.github.io/informed/getting-started/adobe-checkbox-group.md): getting-started/adobe-checkbox-group
+- [Adobe Combo Box](https://teslamotors.github.io/informed/getting-started/adobe-combo-box.md): getting-started/adobe-combo-box
+- [Adobe Form](https://teslamotors.github.io/informed/getting-started/adobe-form.md): getting-started/adobe-form
+- [Adobe Number Input](https://teslamotors.github.io/informed/getting-started/adobe-number-input.md): getting-started/adobe-number-input
+- [Adobe Radio Group](https://teslamotors.github.io/informed/getting-started/adobe-radio-group.md): getting-started/adobe-radio-group
+- [Adobe Select](https://teslamotors.github.io/informed/getting-started/adobe-select.md): getting-started/adobe-select
+- [Adobe Slider](https://teslamotors.github.io/informed/getting-started/adobe-slider.md): getting-started/adobe-slider
+- [Adobe Switch](https://teslamotors.github.io/informed/getting-started/adobe-switch.md): getting-started/adobe-switch
+- [Adobe Text Area](https://teslamotors.github.io/informed/getting-started/adobe-text-area.md): getting-started/adobe-text-area
+- [Adobe Text Input](https://teslamotors.github.io/informed/getting-started/adobe-text-input.md): getting-started/adobe-text-input
+- [`ArrayField`](https://teslamotors.github.io/informed/getting-started/array-field.md): getting-started/array-field
+- [Changelog](https://teslamotors.github.io/informed/getting-started/changelog.md): getting-started/changelog
+- [Checkbox](https://teslamotors.github.io/informed/getting-started/checkbox.md): getting-started/checkbox
+- [`Field Api`](https://teslamotors.github.io/informed/getting-started/fieldApi.md): getting-started/fieldApi
+- [`Field State`](https://teslamotors.github.io/informed/getting-started/fieldState.md): getting-started/fieldState
+- [Form](https://teslamotors.github.io/informed/getting-started/form.md): getting-started/form
+- [`Form Api`](https://teslamotors.github.io/informed/getting-started/formApi.md): getting-started/formApi
+- [Formatting](https://teslamotors.github.io/informed/getting-started/formatting.md): getting-started/formatting
+- [`Form State`](https://teslamotors.github.io/informed/getting-started/formState.md): getting-started/formState
+- [Hooks](https://teslamotors.github.io/informed/getting-started/hooks.md): getting-started/hooks
+- [Intro](https://teslamotors.github.io/informed/getting-started/intro.md): getting-started/intro
+- [Metadata](https://teslamotors.github.io/informed/getting-started/metadata.md): getting-started/metadata
+- [Number Input](https://teslamotors.github.io/informed/getting-started/number-input.md): getting-started/number-input
+- [`Path Syntax`](https://teslamotors.github.io/informed/getting-started/path-syntax.md): getting-started/path-syntax
+- [Radio](https://teslamotors.github.io/informed/getting-started/radio.md): getting-started/radio
+- [Informed](https://teslamotors.github.io/informed/getting-started/readme.md): getting-started/readme
+- [Schema](https://teslamotors.github.io/informed/getting-started/schema.md): getting-started/schema
+- [Select](https://teslamotors.github.io/informed/getting-started/select.md): getting-started/select
+- [Getting Started](https://teslamotors.github.io/informed/getting-started/setup.md): getting-started/setup
+- [Slider](https://teslamotors.github.io/informed/getting-started/slider.md): getting-started/slider
+- [Text Area](https://teslamotors.github.io/informed/getting-started/text-area.md): getting-started/text-area
+- [Text Input](https://teslamotors.github.io/informed/getting-started/text-input.md): getting-started/text-input
+- [Validation](https://teslamotors.github.io/informed/getting-started/validation.md): getting-started/validation
+
+### API Reference
+
+- [`ArrayField`](https://teslamotors.github.io/informed/api-reference/array-field.md): api-reference/array-field
+- [`ArrayField`](https://teslamotors.github.io/informed/api-reference/arrays-array-field.md): api-reference/arrays-array-field
+- [`ArrayField Clear`](https://teslamotors.github.io/informed/api-reference/arrays-array-field-clear.md): api-reference/arrays-array-field-clear
+- [`ArrayField Insert`](https://teslamotors.github.io/informed/api-reference/arrays-array-field-insert.md): api-reference/arrays-array-field-insert
+- [`ArrayField.Item`](https://teslamotors.github.io/informed/api-reference/arrays-array-field-item.md): api-reference/arrays-array-field-item
+- [`ArrayField Reset`](https://teslamotors.github.io/informed/api-reference/arrays-array-field-reset.md): api-reference/arrays-array-field-reset
+- [`ArrayField Swap`](https://teslamotors.github.io/informed/api-reference/arrays-array-field-swap.md): api-reference/arrays-array-field-swap
+- [`Nested ArrayFields`](https://teslamotors.github.io/informed/api-reference/arrays-nested-array-field.md): api-reference/arrays-nested-array-field
+- [Async Options](https://teslamotors.github.io/informed/api-reference/async-options.md): api-reference/async-options
+- [Async Validation](https://teslamotors.github.io/informed/api-reference/async-validation.md): api-reference/async-validation
+- [Conditional Schema Control](https://teslamotors.github.io/informed/api-reference/conditional-schema-control.md): api-reference/conditional-schema-control
+- [`Creating Custom Inputs`](https://teslamotors.github.io/informed/api-reference/creating-custom-inputs.md): api-reference/creating-custom-inputs
+- [`Creating Formatted Object Inputs`](https://teslamotors.github.io/informed/api-reference/creating-formatted-object-inputs.md): api-reference/creating-formatted-object-inputs
+- [`Creating Object Inputs`](https://teslamotors.github.io/informed/api-reference/creating-object-inputs.md): api-reference/creating-object-inputs
+- [`Debug Component`](https://teslamotors.github.io/informed/api-reference/debug-component.md): api-reference/debug-component
+- [Debugging Logs](https://teslamotors.github.io/informed/api-reference/debug-logs.md): api-reference/debug-logs
+- [`Field Api`](https://teslamotors.github.io/informed/api-reference/fieldApi.md): api-reference/fieldApi
+- [`Field State`](https://teslamotors.github.io/informed/api-reference/fieldState.md): api-reference/fieldState
+- [Focus Validation](https://teslamotors.github.io/informed/api-reference/focus-validation.md): api-reference/focus-validation
+- [`Modified`](https://teslamotors.github.io/informed/api-reference/form-modified.md): api-reference/form-modified
+- [`FormProvider`](https://teslamotors.github.io/informed/api-reference/form-provider.md): api-reference/form-provider
+- [`Form Api`](https://teslamotors.github.io/informed/api-reference/formApi.md): api-reference/formApi
+- [`formApiRef`](https://teslamotors.github.io/informed/api-reference/formApiRef.md): api-reference/formApiRef
+- [`Clean`](https://teslamotors.github.io/informed/api-reference/formatting-clean.md): api-reference/formatting-clean
+- [`Formmater`](https://teslamotors.github.io/informed/api-reference/formatting-formatter.md): api-reference/formatting-formatter
+- [`Formatter Functions`](https://teslamotors.github.io/informed/api-reference/formatting-formatter-functions.md): api-reference/formatting-formatter-functions
+- [`Mask`](https://teslamotors.github.io/informed/api-reference/formatting-mask.md): api-reference/formatting-mask
+- [`NumberFormatter`](https://teslamotors.github.io/informed/api-reference/formatting-number.md): api-reference/formatting-number
+- [`Parse`](https://teslamotors.github.io/informed/api-reference/formatting-parse.md): api-reference/formatting-parse
+- [`Form State`](https://teslamotors.github.io/informed/api-reference/formState.md): api-reference/formState
+- [`Global Field State`](https://teslamotors.github.io/informed/api-reference/global-field-state.md): api-reference/global-field-state
+- [`Global Field State`](https://teslamotors.github.io/informed/api-reference/global-form-state.md): api-reference/global-form-state
+- [Keep State](https://teslamotors.github.io/informed/api-reference/keep-state.md): api-reference/keep-state
+- [`Keep State If Relevant`](https://teslamotors.github.io/informed/api-reference/keep-state-if-relevant.md): api-reference/keep-state-if-relevant
+- [Metadata](https://teslamotors.github.io/informed/api-reference/metadata.md): api-reference/metadata
+- [`Multistep Actions`](https://teslamotors.github.io/informed/api-reference/multistep-actions.md): api-reference/multistep-actions
+- [Multistep Dynamic](https://teslamotors.github.io/informed/api-reference/multistep-dynamic.md): api-reference/multistep-dynamic
+- [`Multistep Forms`](https://teslamotors.github.io/informed/api-reference/multistep-intro.md): api-reference/multistep-intro
+- [`Multistep State`](https://teslamotors.github.io/informed/api-reference/multistep-state.md): api-reference/multistep-state
+- [Paired Validation](https://teslamotors.github.io/informed/api-reference/paired-validation.md): api-reference/paired-validation
+- [`Path Syntax`](https://teslamotors.github.io/informed/api-reference/path-syntax.md): api-reference/path-syntax
+- [`Relevance Optimization`](https://teslamotors.github.io/informed/api-reference/relevance-optimization.md): api-reference/relevance-optimization
+- [Relevant Arrays](https://teslamotors.github.io/informed/api-reference/relevant-arrays.md): api-reference/relevant-arrays
+- [Relevant Component](https://teslamotors.github.io/informed/api-reference/relevant-component.md): api-reference/relevant-component
+- [Relevant Schema](https://teslamotors.github.io/informed/api-reference/relevant-schema.md): api-reference/relevant-schema
+- [Relevant Scoped](https://teslamotors.github.io/informed/api-reference/relevant-scoped.md): api-reference/relevant-scoped
+- [`Array Field Schema`](https://teslamotors.github.io/informed/api-reference/schema-array-field.md): api-reference/schema-array-field
+- [`Schema Components`](https://teslamotors.github.io/informed/api-reference/schema-components.md): api-reference/schema-components
+- [`Conditional Options Schema`](https://teslamotors.github.io/informed/api-reference/schema-conditional-option.md): api-reference/schema-conditional-option
+- [`Custom Schema`](https://teslamotors.github.io/informed/api-reference/schema-custom.md): api-reference/schema-custom
+- [`Evaluate When`](https://teslamotors.github.io/informed/api-reference/schema-evaluate-when.md): api-reference/schema-evaluate-when
+- [`Formatted Schema`](https://teslamotors.github.io/informed/api-reference/schema-formatted.md): api-reference/schema-formatted
+- [Schema Intro](https://teslamotors.github.io/informed/api-reference/schema-intro.md): api-reference/schema-intro
+- [`Nested Schema`](https://teslamotors.github.io/informed/api-reference/schema-nested.md): api-reference/schema-nested
+- [`Nested Array Field Schema`](https://teslamotors.github.io/informed/api-reference/schema-nested-array-field.md): api-reference/schema-nested-array-field
+- [`Relevant Array Field in Schema`](https://teslamotors.github.io/informed/api-reference/schema-relevant-array-field.md): api-reference/schema-relevant-array-field
+- [`Sub Schema`](https://teslamotors.github.io/informed/api-reference/schema-sub.md): api-reference/schema-sub
+- [Scope](https://teslamotors.github.io/informed/api-reference/scope.md): api-reference/scope
+- [Scroll Validation](https://teslamotors.github.io/informed/api-reference/scroll-validation.md): api-reference/scroll-validation
+- [`useField`](https://teslamotors.github.io/informed/api-reference/useField.md): api-reference/useField
+- [UseFieldState](https://teslamotors.github.io/informed/api-reference/useFieldState.md): api-reference/useFieldState
+- [UseForm](https://teslamotors.github.io/informed/api-reference/useForm.md): api-reference/useForm
+- [UseScopedState](https://teslamotors.github.io/informed/api-reference/useScopedState.md): api-reference/useScopedState
+- [UseSubState](https://teslamotors.github.io/informed/api-reference/useSubState.md): api-reference/useSubState
+- [Validation](https://teslamotors.github.io/informed/api-reference/validation.md): api-reference/validation
+- [Validation Control](https://teslamotors.github.io/informed/api-reference/validation-control.md): api-reference/validation-control
+- [Validation Messages](https://teslamotors.github.io/informed/api-reference/validation-messages.md): api-reference/validation-messages
+
+### Examples
+
+- [After Render Bug](https://teslamotors.github.io/informed/examples/after-relevance-bug.md): examples/after-relevance-bug
+- [After Render Bug In Array](https://teslamotors.github.io/informed/examples/after-relevance-bug-array.md): examples/after-relevance-bug-array
+- [`Changing initialValues in Array Fields`](https://teslamotors.github.io/informed/examples/array-change-initial-values.md): examples/array-change-initial-values
+- [`ArrayField`](https://teslamotors.github.io/informed/examples/array-field.md): examples/array-field
+- [`ArrayField Unique Validation`](https://teslamotors.github.io/informed/examples/array-field-unique.md): examples/array-field-unique
+- [Async Options](https://teslamotors.github.io/informed/examples/async-options.md): examples/async-options
+- [Async Validation](https://teslamotors.github.io/informed/examples/async-validation.md): examples/async-validation
+- [`Changing initialValues`](https://teslamotors.github.io/informed/examples/change-initial-values.md): examples/change-initial-values
+- [Chaning Options](https://teslamotors.github.io/informed/examples/changing-options.md): examples/changing-options
+- [`Creating Custom Inputs`](https://teslamotors.github.io/informed/examples/creating-custom-inputs.md): examples/creating-custom-inputs
+- [`Creating Formatted Object Inputs`](https://teslamotors.github.io/informed/examples/creating-formatted-object-inputs.md): examples/creating-formatted-object-inputs
+- [`Creating Object Inputs`](https://teslamotors.github.io/informed/examples/creating-object-inputs.md): examples/creating-object-inputs
+- [Dependent Fields](https://teslamotors.github.io/informed/examples/dependent-fields.md): examples/dependent-fields
+- [Elon Musk](https://teslamotors.github.io/informed/examples/elon-musk.md): examples/elon-musk
+- [Excel Sheet](https://teslamotors.github.io/informed/examples/excel-sheet.md): examples/excel-sheet
+- [`Modified`](https://teslamotors.github.io/informed/examples/form-modified.md): examples/form-modified
+- [`FormProvider`](https://teslamotors.github.io/informed/examples/form-provider.md): examples/form-provider
+- [`Clean`](https://teslamotors.github.io/informed/examples/formatting-clean.md): examples/formatting-clean
+- [`Formmater`](https://teslamotors.github.io/informed/examples/formatting-formatter.md): examples/formatting-formatter
+- [`Formatter Functions`](https://teslamotors.github.io/informed/examples/formatting-formatter-functions.md): examples/formatting-formatter-functions
+- [`Mask`](https://teslamotors.github.io/informed/examples/formatting-mask.md): examples/formatting-mask
+- [`NumberFormatter`](https://teslamotors.github.io/informed/examples/formatting-number.md): examples/formatting-number
+- [`Parse`](https://teslamotors.github.io/informed/examples/formatting-parse.md): examples/formatting-parse
+- [Hidden Field](https://teslamotors.github.io/informed/examples/hidden-field.md): examples/hidden-field
+- [`Huge ArrayField`](https://teslamotors.github.io/informed/examples/huge-array-field.md): examples/huge-array-field
+- [Huge Form](https://teslamotors.github.io/informed/examples/huge-form.md): examples/huge-form
+- [`Initial Vs Default`](https://teslamotors.github.io/informed/examples/initial-vs-default.md): examples/initial-vs-default
+- [`Initialize Value If Pristine`](https://teslamotors.github.io/informed/examples/initialize-if-pristine.md): examples/initialize-if-pristine
+- [Insanely Huge Form!!!!](https://teslamotors.github.io/informed/examples/insanely-huge-form.md): examples/insanely-huge-form
+- [`Multistep Actions`](https://teslamotors.github.io/informed/examples/multistep-actions.md): examples/multistep-actions
+- [Multistep Dynamic](https://teslamotors.github.io/informed/examples/multistep-dynamic.md): examples/multistep-dynamic
+- [Multistep Initial Values](https://teslamotors.github.io/informed/examples/multistep-initial-values.md): examples/multistep-initial-values
+- [`Multistep Forms`](https://teslamotors.github.io/informed/examples/multistep-intro.md): examples/multistep-intro
+- [Paired Validation](https://teslamotors.github.io/informed/examples/paired-validation.md): examples/paired-validation
+- [`Relevance Optimization`](https://teslamotors.github.io/informed/examples/relevance-optimization.md): examples/relevance-optimization
+- [Relevant Arrays](https://teslamotors.github.io/informed/examples/relevant-arrays.md): examples/relevant-arrays
+- [Relevant Component](https://teslamotors.github.io/informed/examples/relevant-component.md): examples/relevant-component
+- [Relevant Schema](https://teslamotors.github.io/informed/examples/relevant-schema.md): examples/relevant-schema
+- [Relevant Scoped](https://teslamotors.github.io/informed/examples/relevant-scoped.md): examples/relevant-scoped
+- [`Array Field Schema`](https://teslamotors.github.io/informed/examples/schema-array-field.md): examples/schema-array-field
+- [`Schema Components`](https://teslamotors.github.io/informed/examples/schema-components.md): examples/schema-components
+- [`Conditional Schema`](https://teslamotors.github.io/informed/examples/schema-conditional.md): examples/schema-conditional
+- [`Conditional Options Schema`](https://teslamotors.github.io/informed/examples/schema-conditional-option.md): examples/schema-conditional-option
+- [`Custom Schema`](https://teslamotors.github.io/informed/examples/schema-custom.md): examples/schema-custom
+- [`Evaluate When`](https://teslamotors.github.io/informed/examples/schema-evaluate-when.md): examples/schema-evaluate-when
+- [`Formatted Schema`](https://teslamotors.github.io/informed/examples/schema-formatted.md): examples/schema-formatted
+- [`JSON Schema Form`](https://teslamotors.github.io/informed/examples/schema-intro.md): examples/schema-intro
+- [`Nested Schema`](https://teslamotors.github.io/informed/examples/schema-nested.md): examples/schema-nested
+- [`Nested Array Field Schema`](https://teslamotors.github.io/informed/examples/schema-nested-array-field.md): examples/schema-nested-array-field
+- [`Relevant Array Field in Schema`](https://teslamotors.github.io/informed/examples/schema-relevant-array-field.md): examples/schema-relevant-array-field
+- [`Sub Schema`](https://teslamotors.github.io/informed/examples/schema-sub.md): examples/schema-sub
+- [`Scope Gotcha`](https://teslamotors.github.io/informed/examples/scope-gotcha.md): examples/scope-gotcha
+- [Table Inline Editing](https://teslamotors.github.io/informed/examples/table-inline-editing.md): examples/table-inline-editing
+- [Two Way Dependence](https://teslamotors.github.io/informed/examples/two-way.md): examples/two-way
+- [Updating Validation](https://teslamotors.github.io/informed/examples/updating-validation.md): examples/updating-validation
+- [Validation Control](https://teslamotors.github.io/informed/examples/validation-control.md): examples/validation-control
+
+## Usage
+
+Append `.md` to any documentation URL to retrieve the raw markdown source, e.g.:
+
+https://teslamotors.github.io/informed/getting-started/intro.md
