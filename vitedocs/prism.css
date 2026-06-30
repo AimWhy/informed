@@ -63,6 +63,13 @@ pre[class*='language-'] {
   background: #272822 !important;
 }
 
+.spectrum--darkest code[class*='language-'],
+.spectrum--darkest pre[class*='language-'] {
+  background: rgb(26, 26, 26) !important;
+  color: #f8f8f2 !important;
+  text-shadow: none !important;
+}
+
 .spectrum--light code[class*='language-'],
 .spectrum--light pre[class*='language-'] {
   /* background-color: rgb(243, 240, 238) !important; */

@@ -2,6 +2,24 @@ body {
   margin: 0px;
 }
 
+/* TDS-inspired dark palette (matches informed-tds docs) */
+.spectrum--darkest {
+  --informed-docs-background: #000;
+  --informed-docs-surface: #222;
+  --informed-docs-elevated: rgb(34, 34, 34);
+  --informed-docs-code-background: rgb(26, 26, 26);
+  --informed-docs-surface-hover: rgba(255, 255, 255, 0.135);
+  --informed-docs-border: #414141;
+  background-color: var(--informed-docs-background);
+  color: #fff;
+}
+
+.spectrum--darkest body,
+.spectrum--darkest .site--app,
+.spectrum--darkest main {
+  background-color: var(--informed-docs-background);
+}
+
 /* ---------- Main ---------- */
 
 main {
@@ -39,10 +57,7 @@ main {
 
 .site--app {
   overflow: hidden;
-}
-
-.spectrum--darkest {
-  background-color: rgb(27, 27, 27);
+  min-height: 100vh;
 }
 
 .spectrum--light {
@@ -72,6 +87,11 @@ strong {
   display: block;
 }
 
+.spectrum--darkest .sidenav {
+  background: var(--informed-docs-surface);
+  border-right: 1px solid var(--informed-docs-border);
+}
+
 /* .spectrum-SideNav h3 {
   display: flex;
   align-items: center;
@@ -93,6 +113,11 @@ strong {
     --spectrum-sidenav-item-text-color-hover,
     var(--spectrum-alias-text-color-hover)
   );
+}
+
+.spectrum--darkest .spectrum-SideNav-item:hover,
+.spectrum--darkest .spectrum-SideNav-item.is-selected {
+  background-color: var(--informed-docs-surface-hover);
 }
 
 @media (max-width: 1200px) {
@@ -135,6 +160,11 @@ strong {
   position: fixed;
 }
 
+.spectrum--darkest .pageHeader {
+  background-color: var(--informed-docs-surface);
+  border-bottom-color: var(--informed-docs-border);
+}
+
 .spectrum--light .pageHeader {
   background-color: white;
 }
@@ -160,6 +190,11 @@ footer {
   justify-content: center;
   align-items: center;
   z-index: 200;
+}
+
+.spectrum--darkest footer {
+  background: var(--informed-docs-background);
+  border-top-color: var(--informed-docs-border);
 }
 
 footer span {
@@ -196,7 +231,7 @@ code {
 
 .spectrum--darkest code {
   color: rgb(179, 224, 83);
-  background-color: rgb(35, 36, 31);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 h1 > code {
@@ -214,7 +249,13 @@ h1 > code {
 }
 
 .spectrum--darkest .code-block {
-  background-color: rgb(35, 36, 31);
+  background-color: var(--informed-docs-code-background);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.spectrum--darkest .code-block pre[class*='language-'] {
+  background: var(--informed-docs-code-background) !important;
+  margin-top: 0 !important;
 }
 
 hr {
@@ -230,6 +271,11 @@ hr {
 .spectrum--light hr {
   color: rgb(230, 230, 230); /* old IE */
   background-color: rgb(230, 230, 230); /* Modern Browsers */
+}
+
+.spectrum--darkest hr {
+  color: rgba(255, 255, 255, 0.12);
+  background-color: rgba(255, 255, 255, 0.12);
 }
 
 .flex {
@@ -266,6 +312,12 @@ hr {
 
 .info-box > div {
   width: 100%;
+}
+
+.spectrum--darkest .info-box > div {
+  background-color: var(--informed-docs-elevated) !important;
+  border: 1px solid var(--informed-docs-border);
+  border-radius: 4px;
 }
 
 /* This is for Car!!! */
