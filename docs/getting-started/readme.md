@@ -415,3 +415,31 @@ import exampleCode from './Example.jsx?raw';
 - allow an evaluate function to be passed into a form field ( i.e useField ). Currently this is not possible because evaluate recomputes props to be passed to the component using useField but it would be nice to not have to call the `useConditional` hook.
 - move the rest of the schema docs over to the new docs ( I simply have not had the time to do this )
 - Types ... I know, I know the types kinda suck. I personally don't use typescript so I have had to rely on other TS wizard devs to help maintain the types.
+
+### LLM-friendly documentation
+
+The docs site exposes raw markdown for LLMs and other tools that prefer plain text over the interactive React UI.
+
+#### How to use it
+
+- **`llms.txt`** — an index of all documentation pages with links to their markdown URLs  
+  https://teslamotors.github.io/informed/llms.txt
+- **`.md` endpoints** — append `.md` to any doc URL to get the raw markdown for that page  
+  e.g. https://teslamotors.github.io/informed/getting-started/intro.md
+
+In local dev the same URLs work under the Vite dev server:
+
+- http://localhost:5173/informed/llms.txt
+- http://localhost:5173/informed/getting-started/intro.md
+
+#### How it works
+
+No separate markdown files are maintained for doc pages. A Vite plugin (`vite-plugins/llmsPlugin.js`) generates everything at dev and build time:
+
+1. **Route discovery** — `vitedocs/llms/parseRoutes.js` parses `vitedocs/Routes/Routes.jsx` to map each doc route to its React component source file.
+2. **Markdown extraction** — `vitedocs/llms/extractMarkdown.js` walks each page's JSX and produces markdown: headings, prose (`Info` blocks, lists, links), and example code from Vite `?raw` imports. `README.md` and `CHANGELOG.md` are served as-is for their routes.
+3. **Serving**
+   - **Dev / preview** — the plugin middleware serves `llms.txt` and `.md` URLs on demand.
+   - **Production** — `npm run build:docs` writes static `llms.txt` and `.md` files into `docs/` alongside the built SPA for GitHub Pages.
+
+Extraction is best-effort for JSX pages (interactive demos and some UI chrome are omitted), but it is enough for LLMs to consume the docs without duplicating content.
