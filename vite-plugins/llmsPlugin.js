@@ -80,6 +80,10 @@ export function llmsPlugin() {
       }
 
       fs.writeFileSync(path.join(outDir, 'llms.txt'), generateLlmsTxt(index));
+
+      // Prevent GitHub Pages Jekyll from compiling route-named .md files into
+      // HTML pages that shadow SPA routes (e.g. getting-started/intro.md → /intro).
+      fs.writeFileSync(path.join(outDir, '.nojekyll'), '');
     }
   };
 }
